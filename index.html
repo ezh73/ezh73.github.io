@@ -1,106 +1,125 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이력서</title>
-    <link rel="stylesheet" href="styles2.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이력서 | 이지훈</title>
+  <link rel="stylesheet" href="styles2.css" />
 </head>
 <body>
-<div class="resume">
+  <div class="resume">
     <header>
-        <h1>이지훈</h1>
-        <p>이메일: ezh737@gmail.com | 전화번호: 010-4236-2619 | GitHub: <a href="https://github.com/ezh73">github.com/ezh73</a></p>
+      <h1>이지훈</h1>
+      <p>
+        이메일: <a href="mailto:ezh737@gmail.com">ezh737@gmail.com</a> | 
+        연락처: 010-4236-2619 | 
+        GitHub: <a href="https://github.com/ezh73" target="_blank" rel="noreferrer">github.com/ezh73</a>
+      </p>
     </header>
 
-    <section>
-        <h2>프로필</h2>
-        <p>데이터 분석과 AI 모델링을 기반으로 한 문제 해결에 관심이 있는 주니어 개발자입니다. 
-        부트캠프 및 개인 프로젝트를 통해 웹서비스와 머신러닝 프로젝트를 직접 수행하며 협업 경험을 쌓았습니다. 
-        새로운 기술을 배우고 적용하는 과정에서 성실함과 꾸준함을 강점으로 삼고 있습니다.</p>
+    <section id="about">
+      <h2>인적사항</h2>
+      <ul>
+        <li><b>이름:</b> 이지훈</li>
+        <li><b>연락처:</b> 010-4236-2619</li>
+        <li><b>이메일:</b> <a href="mailto:ezh737@gmail.com">ezh737@gmail.com</a></li>
+        <li><b>GitHub:</b> <a href="https://github.com/ezh73" target="_blank" rel="noreferrer">https://github.com/ezh73</a></li>
+      </ul>
     </section>
 
-    <section>
-        <h2>학력</h2>
-        <p>경북대학교 지질학과 졸업 (2011.03 ~ 2018.08)</p>
+    <section id="edu">
+      <h2>학력</h2>
+      <p>경북대학교 지질학과 졸업 (2011.03 ~ 2018.08)</p>
     </section>
 
-    <section>
-        <h2>교육</h2>
-        <p>융합 메디컬 AI with 스마트 웰니스 과정 수료 (2025.07)</p>
-        <p>대경ICT산업협회 주관 데이터 분석·AI 부트캠프 (2025.07 ~ 진행 중)</p>
+    <section id="training">
+      <h2>교육</h2>
+      <ul>
+        <li>융합 메디컬 AI with 스마트 웰니스 과정 수료 (2025.01 ~ 07)</li>
+        <li>대경ICT산업협회 주관 데이터 분석·AI 부트캠프 (2025.07 ~ 진행 중)
+          <ul>
+            <li>머신러닝/딥러닝, 데이터 전처리, 시각화, 웹서비스 구현 등 프로젝트 기반 학습</li>
+            <li>팀 프로젝트 및 개인 프로젝트 다수 수행</li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
-    <section>
-        <h2>프로젝트 경험</h2>
-        <div class="project">
-            <h3>CT Team Project (2025.04 ~ 05)</h3>
-            <ul>
-                <li>ConvNeXt + Attention 기반 폐 결절 진단 모델 구현 (Accuracy 91%)</li>
-                <li>Grad-CAM 시각화를 통한 모델 설명력 강화</li>
-                <li><b>역할:</b> 결과 정리, 발표 자료 제작</li>
-                <li><b>기술:</b> Python, PyTorch, OpenCV</li>
-            </ul>
-        </div>
+    <section id="projects">
+      <h2>프로젝트 경험</h2>
 
-        <div class="project">
-            <h3>음성 AI 기반 ADHD 조기 진단 지원 시스템 (2025.05 ~ 06)</h3>
-            <ul>
-                <li>Whisper 기반 STT + gTTS TTS 결합으로 음성 설문 환경 제공</li>
-                <li>FastAPI 백엔드와 SvelteKit 프론트엔드로 설문 시스템 구축</li>
-                <li><b>역할:</b> 프론트엔드 UI 개선, 테스트 및 결과 정리</li>
-                <li><b>기술:</b> Python, FastAPI, SvelteKit, Whisper, gTTS</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>MRI Team Project (2025.06 ~ 07)</h3>
-            <ul>
-                <li>MRI 뇌종양 영상 세그멘테이션 모델을 웹서비스 형태로 구현</li>
-                <li><b>역할:</b> 프론트엔드 UI 개선, 발표 자료 제작</li>
-                <li><b>기술:</b> Python, FastAPI, Svelte, PyTorch</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>제주 안전 관광 웹서비스 (진행 중, 2025.09 ~ )</h3>
-            <ul>
-                <li>관광지 혼잡도·교통량 예측 기반 안전 주행 추천 서비스 기획 및 개발</li>
-                <li><b>역할:</b> 프론트엔드 프로토타입 제작, 데이터 API 연동</li>
-                <li><b>기술:</b> Python, FastAPI</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>대구 라이온즈파크 팬 포털 (개인 진행 중, 2025.09 ~ )</h3>
-            <ul>
-                <li>경기 기록 기반 승부 예측, 선수 정보 대시보드, 주변 편의시설 안내 기능 구현 중</li>
-                <li><b>역할:</b> 기획, 데이터 수집, 모델 설계 및 웹 구현 전반</li>
-                <li><b>기술:</b> Python, NeuralProphet, FastAPI</li>
-            </ul>
-        </div>
-
-        <div class="project">
-            <h3>Doping_API (개인 진행 중, 2025.07 ~ )</h3>
-            <ul>
-                <li>스포츠 도핑 관련 데이터를 제공하는 REST API 서비스 초기 구현</li>
-                <li><b>역할:</b> 데이터 수집 및 API 설계</li>
-                <li><b>기술:</b> Python, FastAPI</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>기술 스택</h2>
+      <h3>팀 프로젝트</h3>
+      <article class="project">
+        <p><b>CT 기반 폐 결절 악성 예측 모델 구현</b> (2025.04 ~ 05)</p>
         <ul>
-            <li><b>Programming:</b> Python, Pandas</li>
-            <li><b>ML/DL:</b> Scikit-learn, PyTorch, NeuralProphet</li>
-            <li><b>Web:</b> FastAPI, Svelte, SvelteKit</li>
-            <li><b>Database:</b> Oracle DB (기초)</li>
-            <li><b>Currently Learning:</b> Java, JavaScript, HTML/CSS, Spring, TensorFlow</li>
-            <li><b>Tools:</b> Git, Jira, VS Code</li>
+          <li>ConvNeXt + CBAM 기반 폐 결절 진단 모델 구현 (Accuracy 91%)</li>
+          <li>CAM Alignment 기법을 통한 모델 설명력 강화</li>
+          <li><b>역할:</b> 결과 정리, 발표 자료 제작, 경량화 등의 모델 성능 향상 실험</li>
+          <li><b>기술:</b> Python, PyTorch</li>
         </ul>
+      </article>
+
+      <article class="project">
+        <p><b>음성 AI 기반 ADHD 조기 진단 지원 시스템</b> (2025.05 ~ 06)</p>
+        <ul>
+          <li>Whisper 기반 실시간 STT + gTTS TTS 결합으로 음성 설문 환경 제공</li>
+          <li>FastAPI 백엔드와 SvelteKit 프론트엔드로 설문 시스템 구축</li>
+          <li><b>역할:</b> 프론트엔드 UI 개선, 문항 흐름 테스트, 결과 정리 지원</li>
+          <li><b>기술:</b> Python, FastAPI, SvelteKit, Whisper, gTTS, RapidFuzz</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <p><b>뇌수막종 MRI 세그먼트 및 시각화 웹 시스템</b> (2025.06 ~ 07)</p>
+        <ul>
+          <li>MRI 뇌종양 영상 세그멘테이션 모델을 개발하고 웹서비스 형태로 구현</li>
+          <li>원본 3D MRI 사진 입력 → 전처리와 시각화를 동시에 진행하는 웹 구현</li>
+          <li><b>역할:</b> 발표 자료 제작, 프론트엔드 구현, 백엔드 전처리 구조 구현</li>
+          <li><b>기술:</b> Python, FastAPI, SvelteKit, PyTorch</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <p><b>제주 안전 관광 웹서비스</b> (진행 중, 2025.09 ~ )</p>
+        <ul>
+          <li>관광지 혼잡도·교통량 예측 기반 안전 주행 추천 서비스 기획 및 개발</li>
+          <li><b>역할:</b> 프론트엔드 프로토타입 제작, 데이터 API 연동</li>
+          <li><b>기술:</b> Python, FastAPI, JAVA, Spring, HTML/CSS/JS, Oracle DB 등</li>
+        </ul>
+      </article>
+
+      <h3>개인 프로젝트</h3>
+      <article class="project">
+        <p><b>대구 라이온즈파크 팬 포털</b> (개인 진행 중, 2025.09 ~ )</p>
+        <ul>
+          <li>경기 기록 기반 승부 예측, 선수 정보 대시보드, 주변 편의시설 안내 기능 기획 및 구현 중</li>
+          <li>향후 직관 여부 결정 도우미, 승률 예측 및 당일 MVP 예측 등 제공 예정</li>
+          <li><b>역할:</b> 기획, 데이터 수집, 예측 모델 설계 및 웹 구현 전반</li>
+          <li><b>기술:</b> Python, NeuralProphet, FastAPI</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <p><b>Doping_API</b> (개인 진행 중, 2025.07 ~ )</p>
+        <ul>
+          <li>운동선수들에게 도핑 관련 데이터를 제공하는 REST API 서비스 초기 구현</li>
+          <li>향후 처방전·약물 데이터로 금지약물 여부 확인 서비스 구현 예정</li>
+          <li><b>역할:</b> 데이터 수집 및 API 설계</li>
+          <li><b>기술:</b> Python, FastAPI, EasyOCR</li>
+        </ul>
+      </article>
     </section>
-</div>
+
+    <section id="skills">
+      <h2>기술 스택</h2>
+      <ul>
+        <li><b>Programming:</b> Python, Pandas</li>
+        <li><b>ML/DL:</b> Scikit-learn, PyTorch, NeuralProphet</li>
+        <li><b>Web:</b> FastAPI, Svelte, SvelteKit</li>
+        <li><b>Currently Learning / Basic Experience:</b> Java, JavaScript, HTML/CSS, Spring, TensorFlow, Oracle DB</li>
+        <li><b>Tools:</b> Git, Docker, Conda, uv</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
