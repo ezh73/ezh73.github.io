@@ -1,139 +1,110 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>이력서 | 이지훈</title>
-  <link rel="stylesheet" href="styles2.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이지훈 | AI & Backend Developer</title>
+  <link rel="stylesheet" href="styles2.css" />
 </head>
 <body>
-  <div class="resume">
-    <header>
-      <h1>이지훈</h1>
-      <p>
-        <a href="mailto:ezh737@gmail.com">ezh737@gmail.com</a> |
-        010-4236-2619 |
-        GitHub: <a href="https://github.com/ezh73" target="_blank" rel="noreferrer">github.com/ezh73</a>
-      </p>
-    </header>
+  <div class="resume">
+    <header>
+      <h1>이지훈 (Lee Ji-Hoon)</h1>
+      <h2>AI & Backend Developer</h2>
+      <p>
+        <a href="mailto:ezh737@gmail.com">ezh737@gmail.com</a> |
+        010-4236-2619 |
+        GitHub: <a href="https://github.com/ezh73" target="_blank" rel="noreferrer">github.com/ezh73</a> |
+        Notion: <a href="https://www.notion.so/29bd25a9617380efbd83e2cf82411243" target="_blank" rel="noreferrer">Portfolio</a>
+      </p>
+    </header>
 
-    <section id="summary">
-      <h2>Summary</h2>
-      <p>
-        "AI 기술로 실제 가치를 만들어내는 서비스 빌더, 이지훈입니다. 비전공자로서 10개월 만에 5개의 프로젝트를 완성하며, 문제 정의부터 End-to-End 구현까지의 역량을 길렀습니다. Python 백엔드에 전문성을 두고, AI를 활용하여 생산성을 극대화하는 문제 해결형 개발자입니다."
-      </p>
-    </section>
+    <section id="summary">
+      <h2>About Me</h2>
+      <p>
+        <strong>비전 딥러닝</strong>과 <strong>AI 서비스 엔지니어링</strong> 경험을 바탕으로, 이미지 분석 솔루션의 실제 가치를 만드는 개발자 이지훈입니다.
+      </p>
+    </section>
 
-    <section id="edu">
-      <h2>학력</h2>
-      <p>경북대학교 지질학과 졸업 (2011.03 ~ 2018.08)</p>
-    </section>
 
-    <section id="training">
-      <h2>교육</h2>
-      <ul>
-        <li>대경ICT산업협회 주관 데이터 분석·AI 부트캠프 (2025.07 ~ 2025.10)</li>
-        <li>융합 메디컬 AI with 스마트 웰니스 과정 수료 (2025.01 ~ 07)</li>
-      </ul>
-    </section>
+    <section id="projects">
+      <h2>Key Projects</h2>
+      <p>'AI비전모델개발' 직무를 위한 두 가지 핵심 역량을 중심으로 프로젝트를 수행했습니다.</p>
 
-    <section id="projects">
-      <h2>프로젝트 경험</h2>
+      <article class="project">
+        <h4>Project 1: 비전 AI 모델링 및 이미지 처리 (Vision AI Modeling)</h4>
+        <p><b>[의료 AI 영상 분석 프로젝트 (CT, MRI)]</b></p>
+        <ul>
+          <li><b>핵심 기술:</b> <strong>Attention U-Net</strong>, ConvNext-Tiny, Pytorch, Tensorflow, <strong>Grad-CAM</strong>, <strong>FastAPI</strong></li>
+          <li><b>주요 경험:</b>
+            <ul>
+              <li><b>[Segmentation]</b> <strong>'Attention U-Net'</strong> 딥러닝 모델을 활용한 뇌 MRI 영상 내 <strong>종양 영역 분할</strong> 경험</li>
+              <li><b>[Classification & Optimization]</b> <strong>ConvNext-Tiny</strong>(경량화 모델) 및 <strong>CBAM</strong> 등 Attention 기법을 활용한 폐 CT <strong>이미지 분류</strong> 및 <strong>모델 경량화</strong> 적용</li>
+              <li><b>[Explainable AI (XAI)]</b> <strong>Grad-CAM</strong> 등 시각화 기법을 학습하여, 모델의 예측 근거를 설명하는 '설명가능한 AI' 방법론 탐구</li>
+              <li><b>[Engineering]</b> 3D 원본 이미지(MRI) 업로드 시, <strong>백엔드(FastAPI)에서 자동 전처리</strong>하는 아키텍처 제안 및 구축</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
 
-      <h3>개인 프로젝트</h3>
-      <article class="project">
-        <h4>Laions: 팬 참여형 AI 야구 예측 플랫폼 (2025.10)</h4>
-        <ul>
-          <li><b>역할:</b> 기획 및 End-to-End 개발</li>
-          <li><b>성과:</b>
-            <ul>
-              <li>초기 기획의 문제점을 분석하고, <strong>AI 예측과 팬 참여 중심으로 프로젝트 방향을 성공적으로 전환(Pivot)</strong>하여 서비스 차별성 확보.</li>
-              <li>Gemini API의 실시간 호출 속도 문제를 해결하기 위해 <strong>DB 캐싱 구조를 직접 설계 및 구현</strong>하여 사용자 경험과 비용 효율성 개선.</li>
-              <li>정규/포스트/비시즌에 따라 기능이 달라지는 복잡성을 해결하기 위해, <strong>'관리자 모드'를 직접 설계</strong>하여 테스트 용이성과 서비스 안정성 확보.</li>
-            </ul>
-          </li>
-          <li><b>기술:</b> FastAPI, React, LightGBM, Gemini API, PostgreSQL, Firebase, GitHub Actions</li>
-        </ul>
-      </article>
+      <article class="project">
+        <h4>Project 2: AI 서비스 엔지니어링 (AI Service Engineering)</h4>
+        <p><b>[Laions: 팬 참여형 AI 야구 예측 플랫폼]</b></p>
+        <ul>
+          <li><b>핵심 기술:</b> <strong>FastAPI</strong>, <strong>PostgreSQL</strong>, React, LightGBM</li>
+          <li><b>주요 경험:</b>
+            <ul>
+              <li>AI 모델(LightGBM)을 <strong>FastAPI 기반 API 서버로 구축</strong> 및 서빙</li>
+              <li><b>[성능 개선]</b> API 응답 속도 저하 문제 → <strong>DB 캐싱 구조 설계</strong>로 성능 및 비용 효율 개선</li>
+              <li><b>[안정성]</b> 서비스 운영 문제 예측 → <strong>'관리자 모드' 설계</strong>로 안정성 확보</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
 
-      <h3>팀 프로젝트</h3>
-      <article class="project">
-        <h4>뇌수막종 MRI 세그먼트 및 시각화 웹 시스템 (2025.06 ~ 07)</h4>
-        <ul>
-            <li><b>나의 역할:</b> 백엔드 전처리 구조 및 프론트엔드 구현</li>
-            <li><b>나의 기여:</b>
-                <ul>
-                    <li>사용자가 3D MRI 원본 영상을 그대로 업로드하면, <strong>서버에서 자동으로 2D 이미지로 전처리되는 시스템 아키텍처를 제안하고 구현</strong>하여 사용자의 불편함을 획기적으로 개선.</li>
-                    <li>FastAPI와 SvelteKit을 연동하여, AI 모델의 예측 결과를 사용자에게 시각적으로 전달하는 전체 파이프라인 구축.</li>
-                </ul>
-            </li>
-            <li><b>프로젝트 전체 기술:</b> Python, FastAPI, SvelteKit, PyTorch, HD-BET</li>
-            <li><b>내가 사용한 핵심 기술:</b> Python, FastAPI, SvelteKit</li>
-        </ul>
-      </article>
+    <section id="skills">
+      <h2>Skill Set</h2>
+      <h3>주력 기술 (Proficient)</h3>
+      <ul>
+        <li><b>AI / Deep Learning:</b> <strong>Pytorch, Tensorflow</strong>, Scikit-Learn, LightGBM</li>
+        <li><b>Backend:</b> <strong>Python, FastAPI</strong></li>
+        <li><b>Database:</b> <strong>PostgreSQL</strong>, Oracle</li>
+        <li><b>Data Engineering:</b> Pandas, Polars</li>
+      </ul>
+      <h3>사용 경험 (Familiar with)</h3>
+      <ul>
+        <li><b>Frontend:</b> React, MUI, SvelteKit</li>
+        <li><b>Infra & Auth:</b> Firebase Authentication, GitHub Actions</li>
+        <li><b>AI API:</b> Gemini API, OpenAI API</li>
+        </ul>
+    </section>
 
-      <article class="project">
-        <h4>제주 안전 관광 웹서비스 (2025.09 ~ 2025.10)</h4>
-        <ul>
-            <li><b>나의 역할:</b> 대규모 데이터 처리 및 예측 모델 R&D</li>
-            <li><b>나의 기여:</b>
-                <ul>
-                    <li>1억 건의 대규모 교통 데이터 처리 성능 검증을 위해 Pandas 대안으로 <strong>Polars와 LazyFrame 도입을 주도</strong>함.</li>
-                    <li>팀의 베이스라인 모델 외에, <strong>NeuralProphet과 LightGBM을 활용한 고성능 모델링을 시도</strong>하며 기술적 한계를 테스트함.</li>
-                </ul>
-            </li>
-            <li><b>프로젝트 전체 기술:</b> Python, Prophet, Langchain, Oracle</li>
-            <li><b>내가 사용한 핵심 기술:</b> Python, Polars, LightGBM, NeuralProphet</li>
-        </ul>
-      </article>
+    <section id="other-projects">
+      <h2>Other Projects (Education)</h2>
+      <article class="project">
+        <h4>제주 안전 관광 웹서비스 미리제주 (2025.09 ~ 2025.10)</h4>
+        <ul>
+          <li>NeuralProphet, LightGBM, Polars 활용</li>
+        </ul>
+      </article>
+      <article class="project">
+        <h4>음성 AI 기반 ADHD 조기 진단 지원 시스템 (2025.05 ~ 06)</h4>
+        <ul>
+          <li>FastAPI, SvelteKit, Whisper 활용</li>
+        </ul>
+      </article>
+    </section>
 
-      <article class="project">
-        <h4>음성 AI 기반 ADHD 조기 진단 지원 시스템 (2025.05 ~ 06)</h4>
-        <ul>
-            <li><b>나의 역할:</b> 백엔드 API 구축 및 프론트엔드 구조 개선</li>
-            <li><b>나의 기여:</b>
-                <ul>
-                    <li>기존 Svelte의 구조적 한계를 분석하고, <strong>SvelteKit으로의 전환을 직접 제안하고 구현</strong>하여 서비스 확장성 확보.</li>
-                    <li><strong>FastAPI를 활용하여 음성 데이터를 처리하고 설문 결과를 저장하는 백엔드 API를 구축</strong>함.</li>
-                </ul>
-            </li>
-            <li><b>프로젝트 전체 기술:</b> Python, FastAPI, SvelteKit, Whisper, gTTS, Zonos</li>
-            <li><b>내가 사용한 핵심 기술:</b> Python, FastAPI, SvelteKit</li>
-        </ul>
-      </article>
+    <section id="education-training">
+      <h2>학력 및 교육</h2>
+      <ul>
+        <li>대경ICT산업협회 주관 데이터 분석·AI 부트캠프 (2025.07 ~ 2025.10)</li>
+        <li>융합 메디컬 AI with 스마트 웰니스 과정 수료 (2025.01 ~ 07)</li>
+        <li>경북대학교 지질학과 졸업 (2011.03 ~ 2018.08)</li>
+      </ul>
+    </section>
 
-       <article class="project">
-        <h4>CT 기반 폐 결절 악성 예측 모델 구현 (2025.04 ~ 05)</h4>
-        <ul>
-            <li><b>나의 역할:</b> AI 모델 성능 분석 및 기술 타당성 검증</li>
-            <li><b>나의 기여:</b>
-                <ul>
-                    <li>프루닝, 양자화 등 다양한 <strong>모델 경량화 기법의 실현 가능성과 예상 효과를 직접 테스트하고 분석</strong>하여, 팀의 기술적 의사결정에 기여함.</li>
-                </ul>
-            </li>
-            <li><b>프로젝트 전체 기술:</b> Python, PyTorch, ConvNeXt, CBAM</li>
-            <li><b>내가 사용한 핵심 기술:</b> Python, PyTorch, Scikit-learn</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="skills">
-      <h2>기술 스택</h2>
-      <h3>주력 기술 (Proficient)</h3>
-      <ul>
-        <li><b>Backend:</b> Python, FastAPI</li>
-        <li><b>AI / ML:</b> Scikit-Learn, LightGBM, PyTorch</li>
-        <li><b>Database:</b> PostgreSQL</li>
-        <li><b>Data Engineering:</b> Pandas, Polars, Web Crawling</li>
-      </ul>
-      <h3>사용 경험 (Familiar with)</h3>
-      <ul>
-        <li><b>Frontend:</b> React, MUI, SvelteKit</li>
-        <li><b>Infra & Auth:</b> Firebase Authentication, GitHub Actions</li>
-        <li><b>AI API:</b> Gemini API, OpenAI API</li>
-        <li><b>Database:</b> Oracle</li>
-      </ul>
-    </section>
-  </div>
+  </div>
 </body>
 </html>
